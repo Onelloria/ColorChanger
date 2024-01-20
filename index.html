@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>JavaScript Color Changer Hands-On Finals Hands-On Activity #2</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>JavaScript Color Changer Hands-On</h1>
+    <button id="COLOR">Click Me</button>
+    <div class="myDiv"></div>
+
+    <script>
+        const button = document.getElementById("COLOR");
+        const div = document.querySelector(".myDiv");
+        let isBlue = false;
+        
+        button.addEventListener("click", function() {
+            if (isBlue) {
+                div.style.backgroundColor = "green";
+                isBlue = false;
+            } else {
+                div.style.backgroundColor = "blue";
+                isBlue = true;
+            }
+        });
+    </script>
+</body>
+</html>
